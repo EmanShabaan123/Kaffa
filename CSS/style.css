@@ -121,7 +121,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn::after{
    height: 100%;
    position: absolute;
    top: 0;
-   border: 22px solid var(--main-color);
+   border: 20px solid var(--main-color);
    transition-duration: 1s;
 }
 header .carousel-inner .carousel-item .carousel-caption .buttons .btn::before{
