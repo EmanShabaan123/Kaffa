@@ -1,0 +1,173 @@
+@media (max-width: 1300px) {
+    header .carousel-inner .carousel-item .container {
+        font-size: clamp(20px , 2vw , 50px);
+    }
+    nav .navbar-brand{
+        width: 20%;
+    }
+     nav .navbar-brand img{
+        width: 100%;
+    }
+    header .carousel-inner .carousel-item .container .caption-text{
+        width: 100%;
+    }
+    nav .navbar-toggler{
+        border: 1.5px solid var(--main-color);
+        background-color: transparent;
+    }
+    nav .navbar-toggler:focus{
+        box-shadow: none;
+        border: 1.5px solid white;
+        background-color: white;
+    }
+    nav .navbar-toggler i{
+        color: var(--main-color);
+        font-size: 22px;
+    }
+    nav .navbar-collapse{
+        width: 90%;
+        margin: auto;
+    }
+    nav .navbar-collapse ul{
+        border-radius: 7px;
+        text-align: center;
+        background-color: black;
+    }
+    #About .container .item p{
+    line-height: 22px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    }
+    #Menu .nav-tabs{
+        width: max-content;
+    }
+    #Beans_Coffee{
+        min-height: 220px;
+    }
+    #Beans_Coffee .container a{
+    border: 5px solid white;
+    width: 60px;
+    height: 60px;
+    }
+    #Beans_Coffee .container a i{
+    font-size: 28px;
+    }
+    #Book .container .content .image{
+    display: none;
+   }
+   #Book .container .content form{
+    flex-basis: 100%;
+   }
+   #Book .container .content form .book h4{
+     font-size: 30px;
+   }
+   #Book .container .content form .book input{
+    width: 100%;
+    padding: 2px;
+    margin-block: 5px;
+}
+#Book .container .content form .book input::placeholder ,
+#Book .container .content form .book textarea::placeholder ,
+#Book .container .content form .book input::placeholder{
+    font-size: 12px;
+}
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    nav .navbar-collapse {
+        width: 75%;
+    }
+    #Services .container .content img{
+        width: 65%;
+        margin: 0 auto;
+        display: block;
+    }
+  
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    nav .navbar-brand{
+        width: 15%;
+    }
+    header .carousel-inner .carousel-item .container .caption-text{
+        width: 75%;
+    }
+    nav .navbar-collapse {
+        width: 60%;
+    }
+    #About .box .boxin{
+        width: fit-content;
+    }
+    #Services .container .content {
+        width: 80%;
+        margin: auto;
+    }
+    #Services .container .content img{
+        width: 55%;
+    }
+    #Book .container .content .image{
+     display: block;
+     flex-basis: 60%;
+   }
+   #Book .container .content form{
+    flex-basis: 40%;
+   }
+   #Book .container .content form .book input{
+    width: 100%;
+    padding: 4px;
+    margin-block: 10px;
+   }
+   #Book .container .content form .book textarea{
+    width: 100%;
+    padding: 4px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 10px;
+   }
+   #Book .container .content form .book input::placeholder ,
+   #Book .container .content form .book textarea::placeholder ,
+   #Book .container .content form .book input::placeholder{
+    font-size: 14px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    nav .navbar-brand{
+        width: 10%;
+    }
+    nav .navbar-collapse ul{
+        background-color: transparent;
+    }
+    #Services .container .content{
+        width: 100%;
+    }
+    #Services .container .content img{
+        width: 100%;
+    }
+       #Beans_Coffee .container a{
+    border: 7px solid white;
+    width: 80px;
+    height: 80px;
+    }
+    #Beans_Coffee .container a i{
+    font-size: 35px;
+    }
+    #Book .container .content form .book input{
+    width: 100%;
+    padding: 4px;
+    margin-block: 10px;
+   }
+   #Book .container .content form .book textarea{
+    width: 100%;
+    padding: 4px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 10px;
+   }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}

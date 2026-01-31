@@ -1,0 +1,541 @@
+header .carousel-inner .carousel-item:nth-of-type(1){
+    background-image: url("../Photos/banner1.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(2){
+    background-image: url("../Photos/banner2.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(3){
+    background-image: url("../Photos/banner3.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(4){
+    background-image: url("../Photos/banner4.jpg");
+  
+}
+header nav{
+    z-index: 3;
+}
+header nav .nav-link{
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+header nav .nav-link::before ,
+header nav .nav-link span.shape ,
+header nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100% / 3);
+    position: absolute;
+    background-color: var(--main-color);
+    transition-duration: 0.5s;
+} 
+header nav .nav-link::before{
+    top: 0;
+    left: -100%;
+}
+header nav .nav-link span.shape{
+    top: 33.333333%;
+    right: -100%;
+}
+header nav .nav-link::after{
+    bottom: 0;
+    top: 66.66666%;
+    left: -100%;
+}
+header nav .nav-link:hover:after ,
+header nav .nav-link:hover::before{
+    left: 0%;
+}
+header nav .nav-link:hover span.shape{
+    right: 0%;
+}
+header .carousel-inner .carousel-item{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .carousel-inner .carousel-item::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .carousel-inner .carousel-item .container{
+    position: relative;
+}
+header .carousel-inner .carousel-item .carousel-caption{
+    position: initial;
+}
+header .carousel-inner .carousel-item .carousel-caption >*{
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: 1s;
+}
+header .carousel-inner .carousel-item.active .carousel-caption >*{
+    transform: translateY(0px);
+    opacity: 1;
+}
+header .carousel-inner .carousel-item .container h2{
+    color: var(--main-color);
+}
+header .carousel-inner .carousel-item .container .caption-text p{
+    letter-spacing: 0.8px;
+    line-height: 27px;
+    transition-delay: 0.2s;
+   
+}
+header .carousel-inner .carousel-item .container .caption-text{
+     width: 75%;
+}
+
+header .carousel-inner .carousel-item .container .buttons button ,
+header .carousel-inner .carousel-item .container .buttons a{
+    color: var(--main-color);
+    border: 1.3px solid var(--main-color);
+    margin-inline: 2px ;
+}
+header .carousel-inner .carousel-item .buttons{
+    transition-delay: 0.4s;
+}
+header #carouselExampleCaptions .carousel-indicators button{
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn{
+    position: relative;
+    overflow: hidden;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn::before ,
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn::after{
+   content: "";
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   border: 18px solid var(--main-color);
+   transition-duration: 1s;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn::before{
+    border-right-color: transparent;
+    left: -100%; 
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn::after{
+    border-left-color: transparent;
+    right: -100%;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover .text{
+    color: white;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::before{
+    left: 0%;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::after{
+    right: 0%;
+}
+/* ////////////// End header ////////////////////////////////// */
+#About{
+    padding: 50px;
+}
+#About .container .item button{
+    border: 1.2px solid white;
+}
+#About .container .item p{
+    line-height: 26px;
+    letter-spacing: 1.2px;
+}
+#About .container .item button{
+    position: relative;
+    overflow: hidden;
+}
+#About .container .item span .text{
+    position: relative;
+    z-index: 3;
+    transition-duration: 0.5s;
+}
+#About .container .item button:hover .text{
+    color: var(--main-color);
+}
+#About .container .item button::after ,
+#About .container .item button::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+#About .container .item button::before{
+    top: -50%;
+}
+#About .container .item button:hover::before{
+    top: 0%;
+}
+#About .container .item button::after{
+    bottom: -50%;
+}
+#About .container .item button:hover::after{
+    bottom: 0%;
+}
+#About .container .item .body p{
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    line-height: 17px;
+}
+#About .container .row .item .box .boxin{
+    width: 200px;
+    margin: auto;
+    position: relative;
+}
+#About .container .item .box .boxin .front {
+    transition-duration: 1.3s;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+}
+#About .container .item .box .boxin:hover .front {
+    transform: rotateY(180deg);
+}
+#About .container .item .box .boxin .back{
+    transition-duration: 1.3s;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+#About .container .item .box .boxin:hover .back{
+    transform: rotateY(0deg);
+}
+#About .container .item .box .boxin .front img{
+    width: 100%;
+    height: 100%;
+}
+#About .container .item .box:nth-of-type(1) .boxin .back{
+    background-color: #404042;
+}
+#About .container .item .box:nth-of-type(2) .boxin .back{
+    background-color: #887748;
+}
+#About .container .item .box:nth-of-type(3) .boxin .back{
+    background-color: #601f37;
+}
+#About .container .item .box .back{
+    transform: rotateY(-180deg);
+    height: 100%;
+}
+#About .container .item .box .body a{
+    padding: 5px 12px;
+    display: block;
+    border: 1.2px solid #fff;
+    border-radius: 17px;
+    color: #fff;
+    background-color: transparent;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 100;
+    transition-duration: 0.7s;
+}
+#About .container .item .box a:hover i{
+    transition-duration: 0.7s;
+}
+#About .container .item .box a:hover i{
+    margin-left: 2px;
+}
+#About .container .item .box:nth-of-type(1) .boxin a:hover {
+    background-color: #fff;
+    color: #404042;
+    font-weight: 300;
+}
+#About .container .item .box:nth-of-type(2) .boxin a:hover{
+    background-color: #fff;
+    color: #887748;
+    font-weight: 300;
+}
+#About .container .item .box:nth-of-type(3) .boxin a:hover{
+    background-color: #fff;
+    color: #601f37;
+    font-weight: 300;
+}
+
+#Services {
+    padding: 30px;
+    background-image: url("../Photos/beans_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#Services::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#Services .container{
+    position: relative;
+}
+#Services .container .content i{
+    color: var(--main-color);
+}
+#Services .container .content h2{
+    font-size: 27px;
+}
+#Services .container .content p{
+    color: rgb(194, 194, 194);
+    letter-spacing: 1px;
+    line-height: 17px;
+    font-size: 12px;
+}
+#Services .container .content img{
+    animation-name: animate1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#Menu{
+    padding: 30px;
+}
+#Menu .nav-tabs{
+    width: fit-content;
+}
+#Menu .nav-tabs .nav-link{
+    color: white;
+    transition-duration: 0.5s;
+}
+#Menu .nav-tabs .nav-link.active ,
+#Menu .nav-tabs .nav-link:hover{
+    color: var(--main-color);
+    background-color: white;
+}
+#Menu .item{
+    transform: scale(0);
+    transition-duration: 0.8s;
+    max-width: 260px ;
+    margin: auto;
+}
+#Menu .tab-pane.show .item{
+    transform: scale(1);
+}
+#Menu .item{
+    background-color: #fff;
+}
+#Menu .item img{
+    transform: scale(0.8);
+    transition-duration: 1s;
+}
+#Menu .item:hover img{
+    transform: scale(1);
+}
+#Menu .cover::-webkit-scrollbar{
+    display: none;
+}
+#Menu h6 ,
+#Menu p{
+    background-image: url("../Photos/leaves_pattern.png");
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px ;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+#Menu h6{
+    top: 12px;
+}
+#Menu p{
+    bottom: 15px;
+}
+#Menu .item:hover h6 ,
+#Menu .item:hover p{
+    transform: translateX(0%);
+}
+#Beans_Coffee{
+    background-image: url("../Photos/ice_drinks_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+    padding: 30px 10px;
+    position: relative;
+}
+#Beans_Coffee .container{
+    position: relative;
+}
+#Beans_Coffee::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#Beans_Coffee .container h2{
+    color: var(--main-color);
+    font-size: clamp(25px , 4.5vw , 70px);
+}
+#Beans_Coffee .container h4{
+    color: white;
+    margin-block: 20px;
+    font-size: clamp(25px , 4vw , 70px);
+}
+#Beans_Coffee .container a{
+    display: block;
+    border: 7px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    padding: 15px 12px;
+    transition-duration: 0.8s;
+    position: relative;
+}
+#Beans_Coffee .container a:hover{
+    border: 7px solid var(--main-color);
+}
+#Beans_Coffee .container a i{
+    font-size: 35px;
+    color: white;
+    transition-duration: 0.8s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45% , -50%);
+}
+#Beans_Coffee .container a:hover i{
+    color: var(--main-color);
+}
+.modal-dialog{
+    width: 100%;
+    max-width: initial;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.modal-content{
+    width: 600px;
+}
+#Book{
+    background-image: url("../Photos/back2.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#Book .container .content{
+    display: flex; 
+}
+#Book .container .content .image{
+    flex-basis: 60%;
+}
+#Book .container .content .image img{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+#Book .container .content form{
+    background-image: url("../Photos/leaves_pattern.png");
+    background-color: var(--main-color);
+    flex-basis: 40%;
+    border-radius: 10px;
+}
+#Book .container .content form .book{
+    width: 85%;
+    margin: auto;
+}
+#Book .container .content form .book h4{
+    color: #fff;
+    margin-block: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+#Book .container .content form .book input{
+    width: 100%;
+    padding: 4px;
+    margin-block: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+#Book .container .content form .book input::placeholder ,
+#Book .container .content form .book textarea::placeholder{
+    font-size: 14px;
+}
+#Book .container .content form .book input[type=datetime-local]{
+    font-weight: 100;
+    color: #757575;
+    font-size: 15px;
+}
+#Book .container .content form .book textarea{
+    width: 100%;
+    padding: 5px;
+    height: 200px;
+    resize: none;
+    margin-block: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+#Book .container .content form .book .btn{
+   width: 100%;
+   color: #fff;
+   background-color: black;
+   outline: none;
+   transition-duration: 0.8s;
+}
+#Book .container .content form .book button span{
+    position: relative;
+}
+#Book .container .content form .book button{
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.8;
+}
+#Book .container .content form .book button:hover{
+    border: 1.5px solid #fff;
+}
+#Book .container .content form .book button::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    background-color: var(--main-color);
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    position: absolute;
+    transition-duration: 0.8s;
+}
+#Book .container .content form .book button:hover:before{
+    bottom: 0%;
+}
+#Book .container .content form .book button:hover .btn{
+    color: var(--main-color);
+ 
+}
+footer{
+    background-color: #3E3E3E;
+    padding-block: 5px;
+}
+footer p{
+    color: azure;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 12px;
+}

@@ -1,0 +1,25 @@
+body{
+     font-family: "Oswald", sans-serif;
+}
+
+h1 ,
+h2 ,
+h3 ,
+h4 ,
+h5 ,
+h6 {
+     font-family: "Sansita Swashed", system-ui;
+}
+:root{
+     --main-color: #4d8b55;
+}
+span.text{
+    z-index: 2;
+    position: relative;
+    transition-duration: 0.5s;
+}
+#About ,
+#Menu{
+     background-image: url("../Photos/leaves_pattern.png");
+     background-color: var(--main-color);
+}
