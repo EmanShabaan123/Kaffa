@@ -145,12 +145,13 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
 #About{
     padding: 50px;
 }
-#About .container .item button{
-    border: 1.2px solid white;
-}
 #About .container .item p{
     line-height: 26px;
     letter-spacing: 1.2px;
+}
+
+#About .container .item button{
+    border: 1.2px solid white;
 }
 #About .container .item button{
     position: relative;
@@ -188,9 +189,9 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
     bottom: 0%;
 }
 #About .container .item .body p{
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.7px;
-    line-height: 17px;
+    line-height: 18px;
 }
 #About .container .row .item .box .boxin{
     width: 200px;
@@ -266,6 +267,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
     font-weight: 300;
 }
 
+
 #Services {
     padding: 30px;
     background-image: url("../Photos/beans_bg.jpg");
@@ -297,7 +299,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
     color: rgb(194, 194, 194);
     letter-spacing: 1px;
     line-height: 17px;
-    font-size: 12px;
+    font-size: 13px;
 }
 #Services .container .content img{
     animation-name: animate1;
@@ -305,6 +307,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 
 #Menu{
     padding: 30px;
