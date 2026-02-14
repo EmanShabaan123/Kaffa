@@ -84,8 +84,8 @@ header .carousel-inner .carousel-item.active .carousel-caption >*{
 header .carousel-inner .carousel-item .container h2{
     color: var(--main-color);
 }
-header .carousel-inner .carousel-item .container .caption-text p{
-    letter-spacing: 0.8px;
+header .carousel-inner .carousel-item .container p{
+    letter-spacing: 1.26px;
     line-height: 27px;
     transition-delay: 0.2s;
    
@@ -191,7 +191,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
 #About .container .item .body p{
     font-size: 13px;
     letter-spacing: 0.7px;
-    line-height: 18px;
+    line-height: 20px;
 }
 #About .container .row .item .box .boxin{
     width: 200px;
