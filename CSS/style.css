@@ -19,7 +19,10 @@ header nav .nav-link{
     border-radius: 7px;
     overflow: hidden;
 }
-
+header nav span.text{
+    letter-spacing: 1px;
+    font-size: 17px;
+}
 header nav .nav-link::before ,
 header nav .nav-link span.shape ,
 header nav .nav-link::after{
@@ -85,7 +88,7 @@ header .carousel-inner .carousel-item .container h2{
     color: var(--main-color);
 }
 header .carousel-inner .carousel-item .container p{
-    letter-spacing: 1.26px;
+    letter-spacing: 1.3px;
     line-height: 27px;
     transition-delay: 0.2s;
    
@@ -243,6 +246,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
     margin: auto;
     text-decoration: none;
     font-weight: 100;
+    margin-bottom: 5px;
     transition-duration: 0.7s;
 }
 #About .container .item .box a:hover i{
@@ -298,7 +302,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
 #Services .container .content p{
     color: rgb(194, 194, 194);
     letter-spacing: 1px;
-    line-height: 17px;
+    line-height: 20px;
     font-size: 13px;
 }
 #Services .container .content img{
@@ -510,6 +514,7 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
     position: relative;
     overflow: hidden;
     transition-duration: 0.8;
+    border: 1.5px solid #000;
 }
 #Book .container .content form .book button:hover{
     border: 1.5px solid #fff;
@@ -530,15 +535,16 @@ header .carousel-inner .carousel-item .carousel-caption .buttons .btn:hover::aft
 }
 #Book .container .content form .book button:hover .btn{
     color: var(--main-color);
+    border: none;
  
 }
 footer{
     background-color: #3E3E3E;
-    padding-block: 5px;
+    padding-block: 10px;
 }
 footer p{
     color: azure;
     text-align: center;
-    font-size: 15px;
-    padding-top: 12px;
+    font-size: 17px;
+    margin: 0;
 }

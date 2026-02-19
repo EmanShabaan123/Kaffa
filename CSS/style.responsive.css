@@ -71,6 +71,9 @@
 #Book .container .content form .book input::placeholder{
     font-size: 12px;
 }
+footer p{
+    font-size: 14px;
+}
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -86,6 +89,10 @@
         margin: 0 auto;
         display: block;
     }
+   #Book .container .content form{
+     flex-basis: 75%;
+     margin: auto;
+   }
   
 }
 
@@ -133,6 +140,9 @@
    #Book .container .content form .book input::placeholder{
     font-size: 14px;
 }
+#Book .container .content form{
+    margin-block: 0;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -167,6 +177,9 @@
     height: 200px;
     resize: none;
     margin-bottom: 10px;
+   }
+   footer p{
+    font-size: 17px;
    }
 }
 
